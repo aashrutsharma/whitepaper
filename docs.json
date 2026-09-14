@@ -62,9 +62,9 @@
     "tabs": [
       {
         "tab": "Getting Started",
-        "groups": [
+        "anchors": [
           {
-            "group": "Getting Started",
+            "anchor": "Getting Started",
             "pages": [
               {
                 "group": "Introduction",
@@ -79,7 +79,7 @@
             ]
           },
           {
-            "group": "News Stand & Media",
+            "anchor": "News Stand & Media",
             "pages": [
               "untitled-page-6"
             ]
