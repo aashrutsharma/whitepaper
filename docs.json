@@ -116,15 +116,6 @@
         ]
       },
       {
-        "header": "Project",
-        "items": [
-          { "label": "About", "href": "/organizations/About" },
-          { "label": "Validation and Readiness", "href": "/changelog/validation-and-readiness" },
-          { "label": "Governance and Compliance", "href": "/the-problem/how-superadmission-protects-student-data" },
-          { "label": "Known Constraints", "href": "/changelog/known-constraints" }
-        ]
-      },
-      {
         "header": "Company",
         "items": [
           { "label": "Talk to Founders", "href": "https://cal.com/aashrut/talk-to-founders" },
@@ -291,44 +282,7 @@
           }
         ]
       },
-      {
-        "tab": "Operations",
-        "icon": "clipboard-list",
-        "anchors": [
-          {
-            "anchor": "Operations",
-            "icon": "clipboard-list",
-            "color": {
-              "light": "#3f1fcc",
-              "dark": "#3f1fcc"
-            },
-            "groups": [
-              {
-                "group": "Who This Involves",
-                "pages": [
-                  "operations/who-this-actually-involves"
-                ]
-              },
-              {
-                "group": "Authority and Institution",
-                "pages": [
-                  "operations/how-institutions-actually-plug-in",
-                  "operations/how-a-counselling-authority-actually-runs-a-round"
-                ]
-              },
-              {
-                "group": "Monitoring and Control",
-                "pages": [
-                  "operations/what-an-authority-can-actually-see-live",
-                  "operations/how-a-dispute-actually-gets-resolved",
-                  "operations/the-safety-levers-behind-every-round"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-     
+      
   "metadata": {
     "timestamp": true
   },
