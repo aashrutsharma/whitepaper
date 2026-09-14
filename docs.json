@@ -318,8 +318,10 @@
             ]
           }
         ]
-      },
-      
+      }
+    ]
+  },
+
   "metadata": {
     "timestamp": true
   },
@@ -335,8 +337,8 @@
   },
 
   "logo": {
-    "light": "/images/superadmission-whnitepaper.png",
-    "dark": "/images/superadmission-whnitepaper_dark.png"
+    "light": "/images/superadmission-whnitepaper.svg",
+    "dark": "/images/superadmission-whnitepaper_dark.svg"
   },
   "styling": {
     "eyebrows": "breadcrumbs"
