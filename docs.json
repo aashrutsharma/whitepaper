@@ -328,38 +328,7 @@
           }
         ]
       },
-      {
-        "tab": "Changelog",
-        "icon": "clock-desk",
-        "anchors": [
-          {
-            "anchor": "Changelog",
-            "icon": "list-timeline",
-            "color": {
-              "light": "#0c7e5f",
-              "dark": "#0c7e5f"
-            },
-            "groups": [
-              {
-                "group": "Updates",
-                "pages": ["changelog/changelog"]
-              },
-              {
-                "group": "Reference",
-                "pages": [
-                  "changelog/faq",
-                  "changelog/glossary"
-                ]
-              }
-            ],
-            "hidden": true
-          }
-        ],
-        "hidden": true
-      }
-    ]
-  },
-
+     
   "metadata": {
     "timestamp": true
   },
@@ -375,8 +344,8 @@
   },
 
   "logo": {
-    "light": "/images/superadmission-whnitepaper.svg",
-    "dark": "/images/superadmission-whnitepaper_dark.svg"
+    "light": "/images/superadmission-whnitepaper.png",
+    "dark": "/images/superadmission-whnitepaper_dark.png"
   },
   "styling": {
     "eyebrows": "breadcrumbs"
@@ -386,7 +355,7 @@
       "description": "Superadmission is a proposed unified admissions infrastructure for India that connects students, institutions and counselling authorities through Aadhaar, DigiLocker, APAAR and interoperable admissions workflows.",
       "keywords": "Superadmission, PraveshAI, Aidra LLP, Unified Admissions Infrastructure, National Admissions Infrastructure, Admissions Operating System, Higher Education Infrastructure, India Admissions Infrastructure, Admissions Platform, Admissions Portal, Admissions Dashboard, Student Portal, Student Dashboard, Student Workspace, Institution Dashboard, University Dashboard, College Dashboard, Counselling Authority Dashboard, Admission Management System, Admission Operations Platform, Admission Workflow Platform, Admission Lifecycle Management, Admission Automation Platform, Student Identity Platform, Unified Student Profile, Enrollment Management System, Seat Allocation Platform, Counselling Platform, Counselling Management System, Centralized Counselling System, Student Admissions Platform, Institution Operations Platform, University Admissions Platform, College Admissions Platform, Higher Education Admissions, Aadhaar Authentication, Aadhaar Verification, DigiLocker, DigiLocker Integration, APAAR, APAAR ID, Academic Bank of Credits, ABC, Digital Public Infrastructure, India Stack, Education Infrastructure, Education Governance, Education Digitization, NEP 2020, DPDP Act, Admission Compliance, Student Verification, Document Verification, Digital Spot Round, Admissions Intelligence Layer, Admission Orchestration Platform, Unified Student Records, Student Enrollment Platform, Education Technology India, Admission Tracking System, Seat Allocation Engine, Student Journey Platform, Pravesh, AI, University, Colleges, Rank, CRL, Category, Cutoff",
       "robots": "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
-      "author": "Aidra LLP",
+      "author": "Fairhold Corporation Private Limited",
       "application-name": "Superadmission",
       "category": "Education Technology",
       "classification": "Higher Education Admissions Infrastructure"
