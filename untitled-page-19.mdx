@@ -1,0 +1,73 @@
+---
+title: "How a Counselling Authority Actually Runs a Round"
+description: "The mechanics of setting up, running, and publishing a counselling round, and exactly what stays entirely in the authority's own hands throughout."
+---
+
+The case for why this matters to a counselling authority is covered on **What This Looks Like for the People Running It**. This page is the mechanics: what setting up and running an actual round looks like, step by step.
+
+## Setting Up a Round
+
+<Steps>
+  <Step title="Configure the seat matrix">
+    How many seats exist, split by programme, category, and any special quotas. This comes directly from the authority, nothing here is inferred or estimated.
+  </Step>
+  <Step title="Set eligibility rules">
+    Minimum rank or percentile cutoffs, domicile requirements, any exam-specific conditions. These are the authority's existing rules, entered once and then applied consistently every round.
+  </Step>
+  <Step title="Set the round structure">
+    How many rounds there will be, what each round's deadlines are, and how choices carry forward or drop between rounds.
+  </Step>
+</Steps>
+
+## Running a Round
+
+```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#6366f1',
+    'primaryTextColor': '#ffffff',
+    'primaryBorderColor': '#4f46e5',
+    'lineColor': '#8b5cf6',
+    'background': 'transparent',
+    'fontFamily': 'Inter, sans-serif'
+  }
+}}%%
+flowchart TD
+    A[Students register\nand submit choices] --> B[Authority triggers\nthe allocation run]
+    B --> C[Matching engine runs,\napplying the seat matrix\nand eligibility rules exactly as configured]
+    C --> D[Result surfaces\nto the authority for review]
+    D --> E{Authority reviews\nand authorises}
+    E -->|Approved| F[Result published\nto students]
+    E -->|Needs a fix| G[Sent back for correction,\nnothing publishes without approval]
+```
+
+The matching itself runs fast enough that scale isn't the bottleneck, the same underlying engine can process well over a million applications in under an hour. What comes out the other end doesn't go to students automatically. It goes to the authority first, for review and sign-off.
+
+## What Stays in the Authority's Hands, Always
+
+<CardGroup cols={2}>
+  <Card title="Eligibility rules" icon="clipboard-check">
+    Set by the authority, applied exactly as configured, never adjusted automatically.
+  </Card>
+
+  <Card title="Reservation mandates" icon="scale-balanced">
+    Category percentages and quotas are the authority's own policy, not a default the system supplies.
+  </Card>
+
+  <Card title="The seat matrix" icon="table-cells">
+    How many seats exist and where, entered and updated only by the authority.
+  </Card>
+
+  <Card title="Round timing and publication" icon="calendar-check">
+    When a round opens, closes, and when a result actually goes live, all require the authority's own action.
+  </Card>
+</CardGroup>
+
+## The Verification Queue an Authority Actually Sees
+
+Documents are scored and triaged before they ever reach a human, most get cleared automatically and only genuinely uncertain cases are surfaced. Exactly how that scoring works is covered on **Document Workflows**. What an authority sees here is the short list that already needs an actual person's judgment, not a pile of routine checks.
+
+## If Something Needs to Change Mid-Round
+
+Pausing a round, extending a deadline, or rolling back a result that was published in error are all real possibilities, and they're handled as a distinct set of controls rather than something buried in the normal flow above. That's covered next, on **Operational Controls**.

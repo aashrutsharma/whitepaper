@@ -1,0 +1,50 @@
+---
+title: "Where This Actually Came From"
+description: "What was studied before any of this was designed, what that research actually established, and the one test every design decision here has to pass."
+---
+
+Everything described across this whitepaper started as a question: why does the same admission process feel this broken for almost every student going through it, even though every individual system involved, JoSAA, MCC, every state CET, works exactly as designed. This page is about what answering that question actually involved.
+
+## What Was Actually Studied
+
+The starting point was roughly 2,000 real student admission journeys, not a survey asking students what they thought was wrong, but a direct look at what they actually did, step by step, across an entire admission cycle. Where did people get stuck. Where did a deadline get missed. Where did a document get rejected for a reason that turned out to be avoidable.
+
+## What That Research Actually Established
+
+<CardGroup cols={1}>
+  <Card title="The problem is structural, not cosmetic" icon="wrench">
+    It isn't that any single portal has bad design or confusing forms. It's that JoSAA, a state CET, and an institute's own system were each built to work in isolation, so none of them knows what another one already has. No amount of improving one portal's interface fixes a gap between two portals.
+  </Card>
+
+  <Card title="Replacing existing counselling systems outright is the wrong approach" icon="ban">
+    JoSAA, MCC, and every state CET exist because of a legal mandate, not a technology choice. A design that assumes they'll be replaced isn't a realistic design, it's a proposal nobody with the authority to approve it would actually say yes to.
+  </Card>
+
+  <Card title="Data governance can't be an afterthought" icon="shield-check">
+    Once the design involves moving a student's identity, documents, and category data between systems, how that's legally handled isn't a detail to figure out later. It has to shape the design from the very first decision, which is why How Superadmission Protects Student Data exists as a fully worked-out page and not a short disclaimer.
+  </Card>
+</CardGroup>
+
+## The One Test Every Decision Here Has to Pass
+
+Given those three findings, every feature described across this whitepaper gets checked against a single question before it's considered worth building: does this remove a coordination burden from the student, or does it just move that same burden somewhere else, onto an authority, onto an institution, or onto the student in a different form.
+
+A feature that shifts the burden instead of removing it might still look impressive in a demo, but it isn't actually solving the problem this research identified. This is also the real reason the boundary described throughout this whitepaper, that Superadmission coordinates but never decides who gets which seat, keeps showing up again and again. Taking over that decision wouldn't remove a burden either, it would just move who's responsible for it, from an authority that's legally accountable for it to a private system that isn't.
+
+## How a Design Decision Actually Gets Made Here
+
+<Steps>
+  <Step title="Start with what's operationally true today">
+    Before proposing anything, the actual current process gets mapped in as much specific detail as possible, not an idealised version of how counselling is supposed to work, but how it actually runs, including its inconvenient parts.
+  </Step>
+  <Step title="State the real constraint before proposing the fix">
+    Whatever authority's cooperation, legal boundary, or technical limitation applies gets written down explicitly first. A solution proposed without naming its constraint first is usually a solution to a simpler problem than the real one.
+  </Step>
+  <Step title="Write down what's still genuinely uncertain">
+    Anywhere the answer isn't actually known yet, whether an assumption will hold, whether an authority will actually cooperate, it gets stated as uncertain rather than smoothed over. This is exactly why a page like What This Depends On exists as an honest account rather than a confident roadmap.
+  </Step>
+</Steps>
+
+---
+
+This is the thinking behind every other page in this whitepaper, not a separate philosophy sitting apart from it. The specific systems, the profile, the document vault, the dashboard, the allocation engine, are what this research actually pointed toward. This page is just where that pointing started.

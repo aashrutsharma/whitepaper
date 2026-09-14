@@ -1,0 +1,188 @@
+{
+  "theme": "mint",
+  "name": "Mintlify Starter Kit",
+  "colors": {
+    "primary": "#16A34A",
+    "light": "#07C983",
+    "dark": "#15803D"
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "navbar": {
+    "links": [
+      {
+        "href": "mailto:hi@mintlify.com",
+        "label": "Support"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/mintlify",
+      "github": "https://github.com/mintlify",
+      "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ],
+    "display": "header"
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "icon": "book-open-cover",
+          "href": "https://mintlify.com/docs"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://mintlify.com/blog"
+        }
+      ]
+    },
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "untitled-page",
+                  "untitled-page-2",
+                  "untitled-page-3",
+                  "untitled-page-4",
+                  "untitled-page-5"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "News Stand & Media",
+            "pages": [
+              "untitled-page-6"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "The Problem",
+        "anchors": [
+          {
+            "anchor": "The Problem",
+            "groups": [
+              {
+                "group": "What Changes",
+                "pages": [
+                  "untitled-page-7",
+                  "untitled-page-8",
+                  "untitled-page-9"
+                ]
+              },
+              {
+                "group": "Policy and Compliance",
+                "pages": [
+                  "untitled-page-12",
+                  "untitled-page-11"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Intelligence and Data",
+        "anchors": [
+          {
+            "anchor": "PraveshAI",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "untitled-page-10"
+                ]
+              },
+              {
+                "group": "Core Capabilities",
+                "pages": [
+                  "untitled-page-13"
+                ]
+              },
+              {
+                "group": "Trust",
+                "pages": [
+                  "untitled-page-14",
+                  "untitled-page-15"
+                ]
+              }
+            ]
+          },
+          {
+            "anchor": "Manifest",
+            "pages": [
+              "untitled-page-16"
+            ]
+          },
+          {
+            "anchor": "Integrations"
+          },
+          {
+            "anchor": "Digital Spot Round Environment"
+          }
+        ]
+      },
+      {
+        "tab": "Operations",
+        "anchors": [
+          {
+            "anchor": "Operations",
+            "groups": [
+              {
+                "group": "Who This Involves",
+                "pages": [
+                  "untitled-page-17"
+                ]
+              },
+              {
+                "group": "Authority and Institution",
+                "pages": [
+                  "untitled-page-18",
+                  "untitled-page-19"
+                ]
+              },
+              {
+                "group": "Monitoring and Control",
+                "pages": [
+                  "untitled-page-20",
+                  "untitled-page-21",
+                  "untitled-page-22"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

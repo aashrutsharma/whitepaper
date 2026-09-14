@@ -1,0 +1,117 @@
+---
+title: "What Superadmission Depends On"
+---
+
+## Onboarding Relevant Authorities
+
+> **Counseling bodies like JoSAA and MCC are government agencies, so nobody can force them to use Superadmission.** Their participation must be earned. The goal is to build deep trust and deliver so much value that they naturally choose to come on board.
+
+Here's what it takes to get their:
+
+<Steps>
+  <Step title="Show the specific value added to counselling authority systems">
+    A counselling authority needs to see exactly what this does for their operations, less document re-verification, fewer grievances, real-time visibility into their own round, made specificly to their situation.
+  </Step>
+  <Step title="Survive technical evaluation">
+    Their technical team looks at what integrating would actually require: what their systems would need to expose, what data would flow where, what security guarantees exist. This usually involves the National Informatics Centre or another government technical body.
+  </Step>
+  <Step title="Get ministry clearance">
+    For a central authority, this almost certainly needs sign-off from the relevant ministries. That process has its own timeline, and it involves people outside the counselling authority itself.
+  </Step>
+</Steps>
+
+## Getting Permission to Actually Use What Already Exists
+
+<CardGroup cols={2}>
+  <Card title="UIDAI approval for Aadhaar" icon="fingerprint">
+    Using Aadhaar for identity verification requires an actual application to UIDAI, a technical review, and formal agreement to their terms of use.
+  </Card>
+
+  <Card title="Registering with DigiLocker as a requester" icon="folder-open">
+    Pulling a student's documents from DigiLocker, even with their consent, requires registering with the National Informatics Centre as an authorised requester.
+  </Card>
+
+  <Card title="A way to actually take payments" icon="indian-rupee-sign">
+    Collecting registration and acceptance fees needs either a payment aggregator licence from the RBI directly, which is a heavy regulatory process, or a partnership with a bank or company that already has one.
+  </Card>
+
+  <Card title="Being 'genuinely' DPDP-ready" icon="shield-check">
+    Not just designed to comply, as covered on the previous page, but actually reviewed and confirmed as compliant before handling real student data at scale.
+  </Card>
+</CardGroup>
+
+## Does the Technology Actually Hold Up at This Scale?
+
+<AccordionGroup>
+  <Accordion title="Bet: existing counselling portals can be connected through APIs">
+    The whole superadmission system depends on JoSAA, MCC, and state CETs being able to expose a programmatic interface, an API, that Superadmission can read from and write to. If a portal can't or won't build this, the fallback is manual data entry or screen-scraping, both far less reliable, and the benefit shrinks a lot.
+  </Accordion>
+
+  <Accordion title="Bet: most document verification can be automated">
+    The document vault assumes a computer can check most documents for format, completeness, and consistency, leaving only difficult cases for a human reviewer. If it turns out most documents genuinely need a human look anyway, the system would need a much bigger review team than planned, and the speed advantage shrinks.
+  </Accordion>
+
+  <Accordion title="Bet: DigiLocker actually has what's needed">
+    This assumes a meaningful share of students' documents, especially state board marksheets and category certificates, are already available through DigiLocker. Coverage varies a lot by state, some boards simply aren't connected yet. Where a document isn't available, manual upload still works, it's just less of an improvement.
+  </Accordion>
+
+  <Accordion title="Bet: status can update in close to real time">
+    The single dashboard only works well if allotment status, payment confirmation, and seat availability update quickly enough to be trustworthy. If a counselling system only updates its own records once a day in a batch, Unnati's dashboard could show something stale. That's manageable with a clear "last updated" indicator, but it's worth knowing it's a real limitation, not a solved problem.
+  </Accordion>
+</AccordionGroup>
+
+## Will Institutions Actually Trust a Pre-Verified Document?
+
+The document layer only saves real time if an institute is willing to trust "Verified by Superadmission" instead of re-checking a document itself from scratch. That requires institutions to genuinely trust the verification process, and in some cases, regulatory confirmation that accepting it this way is actually permitted. This can't be assumed, it has to be demonstrated, probably starting with institutions that are already comfortable working digitally.
+
+## What Can Be Built Right Now
+
+None of the dependencies above block everything. A meaningful part of the system can be built and tested today:
+
+<CardGroup cols={2}>
+  <Card title="The profile and document layer" icon="user-check">
+    Creating a profile, uploading and verifying documents, storing them, this all works without touching a single counselling system.
+  </Card>
+
+  <Card title="PraveshAI (Our in-house ... )" icon="compass">
+    Eligibility checks and choice-filling advice can run on public data, past cutoffs, seat matrices, round schedules, without a live connection to any authority.
+  </Card>
+
+  <Card title="Allocation logic" icon="scale-balanced">
+    The matching engine can be tested against historical data and simulated scenarios, which doesn't require a live authority feed to prove it works correctly.
+  </Card>
+
+  <Card title="The dashboard and notifications" icon="bell">
+    The coordination layer, deadline tracking, and alerts can all be built and tested in a simulated environment first. 
+  </Card>
+</CardGroup>
+
+## The Assumptions on Student's Side
+
+A few things are being assumed about the student using this:
+
+Students have  has a smartphone or a computer with decent internet. That's a fair assumption because 95.5% of rural youth now own smartphones, and over 95% of villages have 3G or 4G access.
+
+> Like Unnati has an Aadhaar number linked to a working mobile number, since that's how identity verification happens.
+
+## If All of This Goes Right, Here's a Realistic Order
+
+<Steps>
+  <Step title="Regulatory groundwork, running the whole time">
+    DPDP alignment, early conversations with UIDAI and NIC, and figuring out the payment aggregator path. This takes the longest, so it starts immediately and runs in parallel with everything else.
+  </Step>
+  <Step title="Build the parts that don't need anyone's permission">
+    The profile, the document layer, the guidance engine, and the allocation simulation, all buildable and testable right now.
+  </Step>
+  <Step title="A state-level pilot conversation">
+    State systems are operationally simpler than JoSAA or MCC, and talking to a state government is a different, often faster process than talking to a central ministry. A state pilot produces real, provable results without needing a central authority to say yes first.
+  </Step>
+  <Step title="Talking to central authorities">
+    Once a pilot has real numbers behind it, a conversation with JoSAA or MCC has something concrete to point to.
+  </Step>
+  <Step title="Production, expanded one piece at a time">
+    Each new integration goes live only after its own pilot succeeds, expanding gradually rather than attempting a single national launch.
+  </Step>
+</Steps>
+
+---
