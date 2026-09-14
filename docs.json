@@ -282,6 +282,43 @@
           }
         ]
       },
+      {
+        "tab": "Operations",
+        "icon": "clipboard-list",
+        "anchors": [
+          {
+            "anchor": "Operations",
+            "icon": "clipboard-list",
+            "color": {
+              "light": "#3f1fcc",
+              "dark": "#3f1fcc"
+            },
+            "groups": [
+              {
+                "group": "Who This Involves",
+                "pages": [
+                  "operations/who-this-actually-involves"
+                ]
+              },
+              {
+                "group": "Authority and Institution",
+                "pages": [
+                  "operations/how-institutions-actually-plug-in",
+                  "operations/how-a-counselling-authority-actually-runs-a-round"
+                ]
+              },
+              {
+                "group": "Monitoring and Control",
+                "pages": [
+                  "operations/what-an-authority-can-actually-see-live",
+                  "operations/how-a-dispute-actually-gets-resolved",
+                  "operations/the-safety-levers-behind-every-round"
+                ]
+              }
+            ]
+          }
+        ]
+      },
       
   "metadata": {
     "timestamp": true
