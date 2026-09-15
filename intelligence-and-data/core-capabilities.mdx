@@ -3,9 +3,9 @@ title: "Core Capabilities"
 description: "How a profile gets verified, how documents get checked, how guidance gets calculated, how seats get matched, and how deadlines stay in sync, all explained in one place."
 ---
 
-Everything on this page runs quietly underneath the profile and dashboard a student actually sees. None of it requires understanding how any of it works to use it, but it's worth explaining properly rather than leaving it as a black box.
+Everything on this page runs quietly underneath the profile and dashboard a student actually sees. 
 
-## One Profile, Verified Once
+## One Verified Profile
 
 A student verifies their identity through an <Tooltip tip="India's national biometric identity system">Aadhaar</Tooltip>-linked <Tooltip tip="One-time password, a short code sent to a registered mobile number to confirm identity">OTP</Tooltip>, the same method already used across most government services. This confirms who someone is without ever storing their Aadhaar number or any biometric data, only a verified yes-or-no status. A student without Aadhaar, or who doesn't want to use it, verifies through an alternate route instead, so this never becomes a hard requirement just to participate.
 
@@ -30,26 +30,26 @@ Once verified, a student's name, date of birth, and category are confirmed a sin
     </Card>
   </CardGroup>
 
-  Each of these can be undone independently, the same way it was granted. Support is also available in more than one Indian language, since a portal that only works in English is a real barrier for a lot of applicants, not a minor inconvenience.
+  Each of these can be undone independently. Support is also available in more than one Indian language, since a portal that only works in English is a real barrier for a lot of applicants.
 </Accordion>
 
-## One Document, Checked Once
+## Document Vault
 
 A document either gets fetched directly from <Tooltip tip="India's government-run digital document locker, where boards and universities place signed, verified copies of certificates directly">DigiLocker</Tooltip>, already signed by the board or university that issued it, or gets uploaded manually where it isn't available there yet. A manually uploaded document is automatically checked for format, completeness, and consistency, name matching across every other document submitted, certificate numbers formatted correctly, a scan that's actually readable, and this produces a confidence score that decides what happens next.
 
-```mermaid
+```mermaid actions={true}
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'primaryColor': '#6366f1',
+    'primaryColor': '#003d5c',
     'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#4f46e5',
-    'lineColor': '#8b5cf6',
+    'primaryBorderColor': '#31497e',
+    'lineColor': '#674f95',
     'background': 'transparent',
     'fontFamily': 'Inter, sans-serif'
   }
 }}%%
-flowchart TD
+flowchart LR
     A[Document uploaded] --> B[Automated checks run:\nformat, completeness, consistency]
     B --> C{Confidence score}
     C -->|80 to 100| D[Cleared automatically,\nminimal or no manual review]
@@ -58,27 +58,71 @@ flowchart TD
     D --> G[Marked verified]
     E --> G
     F --> G
+
+    style A fill:#31497e,stroke:#003d5c,color:#fff
+    style B fill:#674f95,stroke:#31497e,color:#fff
+    style C fill:#a14e9a,stroke:#674f95,color:#fff
+    style D fill:#ffa600,stroke:#ff7a47,color:#fff
+    style E fill:#ff7a47,stroke:#f9596f,color:#fff
+    style F fill:#f9596f,stroke:#d44c8d,color:#fff
+    style G fill:#d44c8d,stroke:#a14e9a,color:#fff
+
 ```
 
 <Accordion title="What happens on rejection">
-  If a document is rejected, whether by the automated check or by a person, the student is told specifically why, a mismatch, an unreadable scan, a missing page, not just "rejected." Resubmitting a corrected version goes through the same process again. If a student believes a rejection was actually wrong, that's a dispute, handled the same way any other one is on How a Dispute Actually Gets Resolved.
+  If a document is rejected, whether by the automated check or by a person, the student is told specifically why, a mismatch, an unreadable scan, a missing page, not just "rejected." Resubmitting a corrected version goes through the same process again. If a student believes a rejection was actually wrong, that's a dispute, handled the same way any other one is on [How a Dispute Actually Gets Resolved.](https://docs.superadmission.com/operations/how-a-dispute-actually-gets-resolved)
 </Accordion>
 
 Once verified, that status is shared rather than rechecked. JoSAA and a state CET both see the same "verified" mark from the same single check, which is the entire point of doing this once instead of three or four times.
 
-## Realistic Odds, Not Guesses
+## Probabilities and <Tooltip tip="Choice-filling : where candidates list their preferred colleges and courses in order of priority for seat allotment from most wanted to least wanted">preference list</Tooltip>
 
 When a student is building their preference list, a probability appears next to each option. It's based on the student's own rank and category, past-year closing ranks for that specific programme, the current seat matrix, and how much that cutoff has historically moved year to year.
 
-<Accordion title="Why it's shown as a band, not a precise number">
-  A rank comfortably inside every past cutoff shows as a high chance. One right at the edge of where cutoffs have historically landed shows as moderate. One well beyond any past cutoff shows as low. It's shown this way on purpose, a number like "73% chance" would suggest a level of certainty the underlying data doesn't actually support. As more information comes in during a round, these estimates update accordingly.
+<Accordion title="Why it's shown as a band,">
+  Your admission chances are based on past cutoffs: <br /> **High:** Your rank is safely within past cutoffs. <br /> **Moderate:** Your rank is right on the edge of past cutoffs. <br /> **Low:** Your rank is well beyond past cutoffs. 
+
+  We use these broad categories because specific percentages (like "73%") give a false sense of certainty. These estimates will update in real-time as new data comes in during the counselling round. 
 </Accordion>
 
 <Warning>
   This is a historical estimate. A rank that would have cleared a cutoff last year isn't certain to clear it this year, demand shifts and seat counts change every cycle.
 </Warning>
 
-It doesn't add, remove, or reorder anything on a student's list, and it doesn't lock a choice in on their behalf. It's the same kind of advice a paid consultant would give, based on real historical data, available to every student at every decision point, not just the ones who can afford one.
+The system will never change, reorder, or lock in choices on your list. Instead, it provides data-backed guidance at every step, giving students the same high-quality personalized advice as a paid consultant, available to everyone, for free.
+
+## A chatbot built on verified data.
+
+Beyond a fixed preference list, a student can also just ask PraveshAI a direct question, the way they'd ask a search engine or a general AI chatbot. 
+
+Factual questions, like "what's the fee for computer science at this college" or "does this institute have a hostel," get answered from[Manifes](https://docs.superadmission.com/intelligence-and-data/what-is-manifest)<Tooltip tip="The registry of every degree-granting institution in India curated by superadmission">[t](https://docs.superadmission.com/intelligence-and-data/what-is-manifest)'s</Tooltip> verified registry. The answer traces back to a government source or a disclosed enrichment method. Where Manifest's own data on a specific field is incomplete, the chatbot says so rather than filling the gap with a guess.
+
+Personalized questions, like "which of these is actually better for me," draws on whatever a student has added to their own profile such as category,domicile state, gender etc. and any extra information student shares with the chatbot such as fee slab you want to maintain etc.
+
+```mermaid actions={true}
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#003d5c',
+    'primaryTextColor': '#ffffff',
+    'primaryBorderColor': '#31497e',
+    'lineColor': '#674f95',
+    'background': 'transparent',
+    'fontFamily': 'Inter, sans-serif'
+  }
+}}%%
+flowchart LR
+    Q[Student asks a question] --> T{What kind of question}
+    T -->|Factual, about a\ncourse or college| F[Answered from\nManifest's verified registry]
+    T -->|Personal, like\n"which is better for me"| P[Answered using only what\nthe student has shared in their profile]
+
+    style Q fill:#31497e,stroke:#003d5c,color:#fff
+    style T fill:#674f95,stroke:#31497e,color:#fff
+    style F fill:#ffa600,stroke:#ff7a47,color:#fff
+    style P fill:#d44c8d,stroke:#a14e9a,color:#fff
+```
+
+None of this runs on information a student hasn't chosen to share. The same layered consent that governs document sharing, covered on How a Student's Profile Actually Works, applies here too, a student's category or state isn't used for a suggestion unless it's already part of their profile. And the same honesty rule as the odds shown during choice filling still applies: this surfaces options and explains why they fit, it doesn't pick one on a student's behalf.
 
 ## Matching Students to Seats
 
@@ -86,24 +130,31 @@ This is the part that actually decides who gets which seat, using an approach ca
 
 Each student has a ranked list of seats they'd accept. Each seat has a ranked list of students it would accept, by merit and eligibility. Students provisionally match to their best available option, and if someone with a better rank later wants the same seat, they can bump someone with a lower rank, who then moves to their next preference. This continues until nobody can be matched any better, a point called a stable match.
 
-```mermaid
+```mermaid actions={true}
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'primaryColor': '#6366f1',
+    'primaryColor': '#31497e',
     'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#4f46e5',
-    'lineColor': '#8b5cf6',
+    'primaryBorderColor': '#003d5c',
+    'lineColor': '#a14e9a',
     'background': 'transparent',
     'fontFamily': 'Inter, sans-serif'
   }
 }}%%
-flowchart TD
+flowchart LR
     A[Students' ranked\npreference lists] --> C[Matching process runs]
     B[Seats' eligibility\nand merit order] --> C
     C --> D{Better match\npossible for anyone?}
     D -->|Yes| C
     D -->|No| E[Stable match reached,\nresult goes to the authority]
+
+    style A fill:#003d5c,stroke:#31497e,color:#fff
+    style B fill:#003d5c,stroke:#31497e,color:#fff
+    style C fill:#d44c8d,stroke:#a14e9a,color:#fff
+    style D fill:#f9596f,stroke:#d44c8d,color:#fff
+    style E fill:#ff7a47,stroke:#ffa600,color:#fff
+
 ```
 
 Category and reservation rules aren't applied afterward, they're built into each seat's eligibility from the start, so a reserved seat simply never appears as an option for a student outside that category. This same approach can process well over a million applications in under an hour. What comes out is a proposed result, not a published one, it goes to the authority for review, and nothing reaches a student until the authority signs off, covered in full on How a Counselling Authority Actually Runs a Round.
