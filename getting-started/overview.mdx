@@ -1,70 +1,46 @@
 ---
 title: "Overview"
-description: "What Superadmission, PraveshAI, and Manifest actually are, and where to start depending on who you are."
 ---
 
-Every year, tens of millions of students in India go through college admissions using systems that each work exactly as designed, JoSAA, MCC, dozens of state counselling boards, and thousands of individual institutions, and still come out of it having typed the same information into four different websites, uploaded the same documents four times, and nearly missed a deadline because nothing told them two systems' windows were closing on the same day.
+Superadmission is a proposed Digital Public Infrastructure (DPI) designed to create a seamless, frictionless access to higher education admissions for every student in India.
 
-This whitepaper is about three things built to fix that, without touching who actually gets which seat.
+Our ultimate goal is to ensure that no student ever misses a deserved admission due to <Tooltip tip="The frustration of system crashes, frozen payment gateways, and losing progress on slow websites during critical deadline hours.">technical barriers</Tooltip>, a lack of information, or a shortage of resources. Built on the principles of <Tooltip tip="Stripping away repetitive forms and multiple logins so that a student can complete in minutes what used to take weeks.">radical simplification</Tooltip> and <Tooltip tip="Safely connecting separate government and university systems so they can instantly talk to each other and share verified data with your permission.">secure interoperability</Tooltip>, Superadmission transforms a stressful maze of separate portals into a single, transparent network ensuring that merit, not administrative hurdles, dictates a student's future.
 
 ## The Three Layers
 
-```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#6366f1',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#4f46e5',
-    'lineColor': '#8b5cf6',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
-flowchart BT
-    Man["Manifest\nWhat is this institution,\nand can it be trusted"] --> Sup["Superadmission\nHow does a student\nactually get admitted"]
-    Sup --> Pra["PraveshAI\nWhat should this student do,\ngiven their rank and preferences"]
-
-    style Sup fill:#7c3aed,stroke:#6d28d9,color:#fff
-```
-
 <CardGroup cols={1}>
-  <Card title="Manifest" icon="database">
-    A verified registry of every degree-granting institution in India, more than 70,000 of them. It answers the question a student has before anything else: what is this college, and is it even real.
-  </Card>
-
   <Card title="Superadmission" icon="layer-group">
-    The coordination layer that sits above JoSAA, MCC, and every state counselling body. It doesn't run counselling and it doesn't decide who gets which seat. It removes the repeated work a student currently does by hand between those systems, one profile, one document vault, one dashboard, instead of a separate version of each per counselling body.
+    The coordination layer that sits beneath JoSAA, MCC, and every state counselling body. It doesn't run counselling and it doesn't decide who gets which seat. It removes the repeated work a student currently does by hand between those systems, one profile, one document vault, one dashboard, instead of a separate version of each per counselling body.
   </Card>
 
   <Card title="PraveshAI" icon="brain">
-    The engine underneath Superadmission that does the actual thinking: verifying identity and documents, estimating a student's real odds at a given college, matching students to seats, and keeping every deadline in sync.
+    The engine underneath Superadmission that does the actual thinking: verifying identity and documents, estimating a student's real chances at a given college and answer students' doubts with verified information, matching students to seats, and keeping every deadline in sync.
+  </Card>
+
+  <Card title="Manifest" icon="database">
+    A verified registry of every degree-granting institution in India, more than 70,000 of them. It answers the question a student has before anything else: what is this college, and what does it actually offer.
   </Card>
 </CardGroup>
-
-## What Doesn't Change
-
-JoSAA still allocates IIT and NIT seats. MCC still allocates AIQ medical seats. Every state CET still allocates seats within its own state, under its own rules. None of that is proposed to change, and none of it is this project's decision to make. What's proposed to change is everything that currently happens before and between those systems, repeated forms, repeated uploads, and deadlines nobody is actually watching together. That full comparison is covered on What Superadmission Actually Changes.
 
 ## Where to Start, Depending on Who You Are
 
 <Tabs>
   <Tab title="Students">
-    Start with How Admissions in India Actually Works for the basics, then Counselling for the full step-by-step process. What Superadmission Actually Changes and A Day With Superadmission cover what's actually different when Superadmission is involved.
+    Start with [How Admissions in India Actually Works](https://docs.superadmission.com/getting-started/how-admissions-actually-work) for the basics, then [What is Counselling](https://docs.superadmission.com/getting-started/counselling) for the full step-by-step process. What Superadmission Actually Changes cover what's actually different when Superadmission is involved.
   </Tab>
   <Tab title="Counselling Authorities">
-    How a Counselling Authority Actually Runs a Round covers round configuration, the verification queue, allocation triggers, and publication controls. How Superadmission Protects Student Data covers DPDP, consent, and data retention.
+    [How a Counselling Authority Actually Runs a Round covers round configuration](https://docs.superadmission.com/operations/how-a-counselling-authority-actually-runs-a-round), the verification queue, allocation triggers, and publication controls. [How Superadmission Protects Student Data](https://docs.superadmission.com/the-problem/how-superadmission-protects-student-data) covers DPDP, consent, and data retention.
   </Tab>
   <Tab title="Institutions">
-    How Institutions Actually Plug In covers the two touchpoints an institution actually has, a pre-verified allotment record delivered on payment confirmation, and a QR scan at physical reporting. No portal rebuild required.
+    [How Institutions Actually Plug In](https://docs.superadmission.com/operations/how-institutions-actually-plug-in) covers the two touchpoints an institution actually has, a pre-verified allotment record delivered on payment confirmation, and a QR scan at physical reporting. 
   </Tab>
   <Tab title="Government and Policy">
-    Superadmission as Digital Public Infrastructure covers the India Stack alignment and design intent. What This Depends On covers the real regulatory approvals and authority cooperation this would actually require.
+    [Superadmission as Digital Public Infrastructure](https://docs.superadmission.com/getting-started/digital-public-infrastructure) covers the India Stack alignment and design intent. [What This Depends On](https://docs.superadmission.com/the-problem/what-this-depends-on) covers the real regulatory approvals and authority cooperation this would actually require.
   </Tab>
 </Tabs>
 
 <CardGroup cols={2}>
-  <Card title="Start With the Problem" href="/how-admissions-in-india-actually-works">
+  <Card title="Start With the Problem" href="https://docs.superadmission.com/getting-started/how-admissions-actually-work">
     To understand how admissions actually work today.
   </Card>
 
