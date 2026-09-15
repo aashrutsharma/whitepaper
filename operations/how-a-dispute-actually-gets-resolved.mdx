@@ -31,10 +31,10 @@ Even with documents pre-verified and deadlines tracked automatically, disagreeme
 %%{init: {
   'theme': 'base',
   'themeVariables': {
-    'primaryColor': '#6366f1',
+    'primaryColor': '#003d5c',
     'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#4f46e5',
-    'lineColor': '#8b5cf6',
+    'primaryBorderColor': '#31497e',
+    'lineColor': '#674f95',
     'background': 'transparent',
     'fontFamily': 'Inter, sans-serif'
   }
@@ -45,6 +45,13 @@ flowchart TD
     B -->|Allocation dispute| D[Authority's designated reviewer]
     B -->|Institution issue| E[Institution admin contact]
     B -->|Technical issue| F[Technical support]
+
+    style A fill:#31497e,stroke:#003d5c,color:#fff
+    style B fill:#674f95,stroke:#31497e,color:#fff
+    style C fill:#a14e9a,stroke:#674f95,color:#fff
+    style D fill:#d44c8d,stroke:#a14e9a,color:#fff
+    style E fill:#f9596f,stroke:#d44c8d,color:#fff
+    style F fill:#ffa600,stroke:#ff7a47,color:#fff
 ```
 
 A grievance isn't dropped into one general queue for someone to eventually sort through. It's categorised by what it's actually about at the moment it's filed, and sent straight to whoever is positioned to actually resolve that specific kind of issue.
