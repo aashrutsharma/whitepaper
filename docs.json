@@ -162,6 +162,15 @@
             "pages": [
               "getting-started/news-stand"
             ]
+          },
+          {
+            "anchor": "Playground",
+            "icon": "play",
+            "color": {
+              "light": "#72b91e",
+              "dark": "#72b91e"
+            },
+            "href": "https://superadmission.com/pravesh"
           }
         ]
       },
@@ -239,15 +248,6 @@
             "pages": [
               "intelligence-and-data/what-is-manifest"
             ]
-          },
-          {
-            "anchor": "Playground",
-            "icon": "play",
-            "color": {
-              "light": "#72b91e",
-              "dark": "#72b91e"
-            },
-            "href": "https://superadmission.com/pravesh"
           },
           {
             "anchor": "API Reference",
