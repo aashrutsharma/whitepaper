@@ -175,11 +175,11 @@
         ]
       },
       {
-        "tab": "The Problem",
+        "tab": "Blueprint",
         "icon": "map",
         "anchors": [
           {
-            "anchor": "The Problem",
+            "anchor": "Blueprint",
             "icon": "map",
             "color": {
               "light": "#40551d",
