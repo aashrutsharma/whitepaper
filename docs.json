@@ -65,7 +65,7 @@
       "grok",
       "download-pdf"
     ],
-    "display": "toc"
+    "display": "header"
   },
   "feedback": {
     "thumbsRating": true,
