@@ -171,13 +171,7 @@
               "dark": "#72b91e"
             },
             "href": "https://superadmission.com/pravesh"
-          }
-        ]
-      },
-      {
-        "tab": "Blueprint",
-        "icon": "map",
-        "anchors": [
+          },
           {
             "anchor": "Blueprint",
             "icon": "map",
@@ -202,13 +196,29 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Intelligence and Data",
-        "icon": "layer-group",
-        "anchors": [
+          },
+          {
+            "anchor": "Digital Spot Round Environment",
+            "icon": "battle-net",
+            "color": {
+              "light": "#9834df",
+              "dark": "#9834df"
+            },
+            "pages": [
+              "praveshai/digital-spot-round"
+            ]
+          },
+          {
+            "anchor": "Manifest",
+            "icon": "database",
+            "color": {
+              "light": "#79251b",
+              "dark": "#79251b"
+            },
+            "pages": [
+              "intelligence-and-data/what-is-manifest"
+            ]
+          },
           {
             "anchor": "PraveshAI™",
             "icon": "brain",
@@ -237,18 +247,13 @@
                 ]
               }
             ]
-          },
-          {
-            "anchor": "Manifest",
-            "icon": "database",
-            "color": {
-              "light": "#79251b",
-              "dark": "#79251b"
-            },
-            "pages": [
-              "intelligence-and-data/what-is-manifest"
-            ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Technical",
+        "icon": "layer-group",
+        "anchors": [
           {
             "anchor": "API Reference",
             "icon": "code",
@@ -268,22 +273,11 @@
             "pages": [
               "praveshai/third-party-integrations"
             ]
-          },
-          {
-            "anchor": "Digital Spot Round Environment",
-            "icon": "battle-net",
-            "color": {
-              "light": "#9834df",
-              "dark": "#9834df"
-            },
-            "pages": [
-              "praveshai/digital-spot-round"
-            ]
           }
         ]
       },
       {
-        "tab": "Operations",
+        "tab": "For Institution",
         "icon": "clipboard-list",
         "anchors": [
           {
