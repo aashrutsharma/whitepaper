@@ -60,15 +60,12 @@
   },
   "contextual": {
     "options": [
-      "copy",
-      "view",
-      "assistant",
       "chatgpt",
       "claude",
-      "perplexity",
-      "grok"
+      "grok",
+      "download-pdf"
     ],
-    "display": "header"
+    "display": "toc"
   },
   "feedback": {
     "thumbsRating": true,
