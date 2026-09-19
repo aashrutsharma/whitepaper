@@ -7,7 +7,7 @@
     "dark": "/images/SVG_ICONONLY_PRAVESH_WHITE.png"
   },
   "colors": {
-    "primary": "#316AE5",
+    "primary": "#000000",
     "light": "#b9b7b7",
     "dark": "#316ae5"
   },
@@ -372,8 +372,5 @@
       "category": "Education Technology",
       "classification": "Higher Education Admissions Infrastructure"
     }
-  },
-  "background": {
-    "decoration": "gradient"
   }
 }
