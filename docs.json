@@ -2,23 +2,19 @@
   "$schema": "https://mintlify.com/docs.json",
   "name": "Superadmission Documentation",
   "theme": "mint",
-
   "favicon": {
     "light": "/images/1B_SVG_ICONONLY_PRAVESH.svg",
     "dark": "/images/SVG_ICONONLY_PRAVESH_WHITE.png"
   },
-
   "colors": {
     "primary": "#282828",
     "light": "#b9b7b7",
     "dark": "#316ae5"
   },
-
   "appearance": {
     "default": "light",
     "strict": false
   },
-
   "fonts": {
     "heading": {
       "family": "Geist",
@@ -29,15 +25,12 @@
       "weight": 400
     }
   },
-
   "icons": {
     "library": "fontawesome"
   },
-
   "search": {
     "prompt": "Search "
   },
-
   "assistant": {
     "placeholder": "Ask anything about Superadmission...",
     "suggestions": [
@@ -48,18 +41,19 @@
       "What problem does Superadmission solve?"
     ]
   },
-
   "navbar": {
     "links": [
       {
         "label": "",
         "href": "https://x.com/aashruts",
-        "icon": "x-twitter"
+        "icon": "x-twitter",
+        "iconType": "brands"
       },
       {
         "label": "",
         "href": "https://www.linkedin.com/company/superadmission/",
-        "icon": "linkedin"
+        "icon": "linkedin",
+        "iconType": "brands"
       }
     ],
     "primary": {
@@ -68,7 +62,6 @@
       "href": "https://cal.com/aashrut/talk-to-founders"
     }
   },
-
   "contextual": {
     "options": [
       "copy",
@@ -81,24 +74,40 @@
     ],
     "display": "header"
   },
-
   "feedback": {
     "thumbsRating": true,
     "suggestEdit": true,
     "raiseIssue": true
   },
-
   "ai": {
     "system": "You are a documentation assistant for Superadmission. Superadmission is a proposed national-scale admissions infrastructure for India. It is not yet deployed and has no official government approvals. Always reflect the proposed nature of the project. Use phrases like: designed to, proposed, intended to, if implemented, if approved. Never overstate capabilities or imply active integrations exist."
   },
-
   "redirects": [
     {
       "source": "/",
       "destination": "/getting-started/overview"
+    },
+    {
+      "source": "/intelligence-and-data/what-is-praveshai",
+      "destination": "/technical/what-is-praveshai"
+    },
+    {
+      "source": "/intelligence-and-data/what-is-manifest",
+      "destination": "/technical/what-is-manifest"
+    },
+    {
+      "source": "/intelligence-and-data/core-capabilities",
+      "destination": "/technical/core-capabilities"
+    },
+    {
+      "source": "/intelligence-and-data/the-human-checkpoints-built-into-this",
+      "destination": "/technical/the-human-checkpoints-built-into-this"
+    },
+    {
+      "source": "/intelligence-and-data/how-every-decision-can-be-traced-back",
+      "destination": "/technical/how-every-decision-can-be-traced-back"
     }
   ],
-
   "footer": {
     "socials": {
       "x": "https://x.com/aashruts",
@@ -108,24 +117,47 @@
       {
         "header": "Documentation",
         "items": [
-          { "label": "Overview", "href": "/getting-started/overview" },
-          { "label": "The Problem", "href": "/the-problem/what-superadmission-actually-changes" },
-          { "label": "PraveshAI™", "href": "/intelligence-and-data/what-is-praveshai" },
-          { "label": "Manifest", "href": "/intelligence-and-data/what-is-manifest" },
-          { "label": "Operations", "href": "/operations/who-this-actually-involves" }
+          {
+            "label": "Overview",
+            "href": "/getting-started/overview"
+          },
+          {
+            "label": "The Problem",
+            "href": "/the-problem/what-superadmission-actually-changes"
+          },
+          {
+            "label": "PraveshAI™",
+            "href": "/technical/what-is-praveshai"
+          },
+          {
+            "label": "Manifest",
+            "href": "/technical/what-is-manifest"
+          },
+          {
+            "label": "Operations",
+            "href": "/operations/who-this-actually-involves"
+          }
         ]
       },
       {
         "header": "Company",
         "items": [
-          { "label": "Talk to Founders", "href": "https://cal.com/aashrut/talk-to-founders" },
-          { "label": "X / Twitter", "href": "https://x.com/aashruts" },
-          { "label": "LinkedIn", "href": "https://www.linkedin.com/company/superadmission/" }
+          {
+            "label": "Talk to Founders",
+            "href": "https://cal.com/aashrut/talk-to-founders"
+          },
+          {
+            "label": "X / Twitter",
+            "href": "https://x.com/aashruts"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/superadmission/"
+          }
         ]
       }
     ]
   },
-
   "navigation": {
     "tabs": [
       {
@@ -200,6 +232,7 @@
           {
             "anchor": "Digital Spot Round Environment",
             "icon": "battle-net",
+            "iconType": "brands",
             "color": {
               "light": "#9834df",
               "dark": "#9834df"
@@ -216,7 +249,7 @@
               "dark": "#79251b"
             },
             "pages": [
-              "intelligence-and-data/what-is-manifest"
+              "technical/what-is-manifest"
             ]
           },
           {
@@ -230,20 +263,20 @@
               {
                 "group": "Overview",
                 "pages": [
-                  "intelligence-and-data/what-is-praveshai"
+                  "technical/what-is-praveshai"
                 ]
               },
               {
                 "group": "Core Capabilities",
                 "pages": [
-                  "intelligence-and-data/core-capabilities"
+                  "technical/core-capabilities"
                 ]
               },
               {
                 "group": "Trust",
                 "pages": [
-                  "intelligence-and-data/the-human-checkpoints-built-into-this",
-                  "intelligence-and-data/how-every-decision-can-be-traced-back"
+                  "technical/the-human-checkpoints-built-into-this",
+                  "technical/how-every-decision-can-be-traced-back"
                 ]
               }
             ]
@@ -315,21 +348,17 @@
       }
     ]
   },
-
   "metadata": {
     "timestamp": true
   },
-
   "interaction": {
     "drilldown": true
   },
-
   "api": {
     "playground": {
       "display": "interactive"
     }
   },
-
   "logo": {
     "light": "/images/superadmission-whnitepaper.svg",
     "dark": "/images/superadmission-whnitepaper_dark.svg"
