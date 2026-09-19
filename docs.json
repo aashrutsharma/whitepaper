@@ -372,5 +372,8 @@
       "category": "Education Technology",
       "classification": "Higher Education Admissions Infrastructure"
     }
+  },
+  "background": {
+    "decoration": "gradient"
   }
 }
