@@ -173,7 +173,8 @@
                   "getting-started/counselling",
                   "getting-started/digital-public-infrastructure",
                   "getting-started/where-this-actually-came-from"
-                ]
+                ],
+                "icon": "book-open"
               }
             ]
           },
@@ -211,14 +212,16 @@
                   "the-problem/what-superadmission-actually-changes",
                   "the-problem/what-this-looks-like-for-the-people-running-it",
                   "the-problem/a-day-with-superadmission"
-                ]
+                ],
+                "icon": "chart-no-axes-combined"
               },
               {
                 "group": "Policy and Compliance",
                 "pages": [
                   "the-problem/how-superadmission-protects-student-data",
                   "the-problem/what-this-depends-on"
-                ]
+                ],
+                "icon": "badge-alert"
               }
             ]
           },
@@ -257,13 +260,15 @@
                 "group": "Overview",
                 "pages": [
                   "technical/what-is-praveshai"
-                ]
+                ],
+                "icon": "square-dashed"
               },
               {
                 "group": "Core Capabilities",
                 "pages": [
                   "technical/core-capabilities"
-                ]
+                ],
+                "icon": "list-check"
               },
               {
                 "group": "Trust",
