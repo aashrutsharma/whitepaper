@@ -1,6 +1,7 @@
 ---
 title: "What an Authority Can Actually See"
 description: "The live view a counselling authority gets during an open round, what triggers an alert, and how a round compares against past ones."
+mode: "wide"
 ---
 
 Running a round is covered on the previous page. This page is about visibility, what an authority can actually see while a round is open, instead of finding out how it went only after it closes. 
@@ -8,17 +9,7 @@ Running a round is covered on the previous page. This page is about visibility, 
 ## A Live View of the Round
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#6366f1',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#4f46e5',
-    'lineColor': '#8b5cf6',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
+
 flowchart LR
     A[Registered] --> B[Documents\nverified]
     B --> C[Choices\nlocked]
@@ -35,7 +26,7 @@ Beyond the student-side funnel, an authority can see how seats are filling in re
 ## Alerts When Something Actually Needs Attention
 
 <CardGroup cols={2}>
-  <Card title="An allocation run fails" icon="triangle-exclamation">
+  <Card title="An allocation run fails" color="#070707" icon="copy-check">
     If a run doesn't complete successfully, the authority is alerted within roughly 60 seconds, not left to notice a missing result on their own.
   </Card>
 

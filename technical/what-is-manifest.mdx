@@ -10,24 +10,10 @@ Manifest is a registry of every degree-granting higher education institution in 
 Superadmission is built as three layers, and each one depends on the one below it.
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#003d5c',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#31497e',
-    'lineColor': '#674f95',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
+
 flowchart LR
     M["Manifest\nWhat is this institution,\nand can it be trusted"] --> S["Superadmission\nHow does a student\nactually get admitted"]
     S --> P["PraveshAI\nWhat should this student do,\ngiven their rank and preferences"]
-
-    style M fill:#31497e,stroke:#003d5c,color:#fff
-    style S fill:#674f95,stroke:#31497e,color:#fff
-    style P fill:#d44c8d,stroke:#a14e9a,color:#fff
 ```
 
 Superadmission can't simplify admissions without solving discovery first, and PraveshAI can't give trustworthy advice without a real dataset underneath it. Manifest is what makes both of those things possible.

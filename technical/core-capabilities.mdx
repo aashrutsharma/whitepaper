@@ -1,6 +1,7 @@
 ---
 title: "Core Capabilities"
 description: "How a profile gets verified, how documents get checked, how guidance gets calculated, how seats get matched, and how deadlines stay in sync, all explained in one place."
+mode: "wide"
 ---
 
 bb<br />Everything on this page runs quietly underneath the profile and dashboard a student actually sees.
@@ -38,17 +39,7 @@ Once verified, a student's name, date of birth, and category are confirmed a sin
 A document either gets fetched directly from <Tooltip tip="India's government-run digital document locker, where boards and universities place signed, verified copies of certificates directly">DigiLocker</Tooltip>, already signed by the board or university that issued it, or gets uploaded manually where it isn't available there yet. A manually uploaded document is automatically checked for format, completeness, and consistency, name matching across every other document submitted, certificate numbers formatted correctly, a scan that's actually readable, and this produces a confidence score that decides what happens next.
 
 ```mermaid actions={true}
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#003d5c',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#31497e',
-    'lineColor': '#674f95',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
+
 flowchart LR
     A[Document uploaded] --> B[Automated checks run:\nformat, completeness, consistency]
     B --> C{Confidence score}
@@ -58,14 +49,6 @@ flowchart LR
     D --> G[Marked verified]
     E --> G
     F --> G
-
-    style A fill:#31497e,stroke:#003d5c,color:#fff
-    style B fill:#674f95,stroke:#31497e,color:#fff
-    style C fill:#a14e9a,stroke:#674f95,color:#fff
-    style D fill:#ffa600,stroke:#ff7a47,color:#fff
-    style E fill:#ff7a47,stroke:#f9596f,color:#fff
-    style F fill:#f9596f,stroke:#d44c8d,color:#fff
-    style G fill:#d44c8d,stroke:#a14e9a,color:#fff
 ```
 
 <Accordion title="What happens on rejection">
@@ -130,29 +113,13 @@ This is the part that actually decides who gets which seat, using an approach ca
 Each student has a ranked list of seats they'd accept. Each seat has a ranked list of students it would accept, by merit and eligibility. Students provisionally match to their best available option, and if someone with a better rank later wants the same seat, they can bump someone with a lower rank, who then moves to their next preference. This continues until nobody can be matched any better, a point called a stable match.
 
 ```mermaid actions={true}
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#31497e',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#003d5c',
-    'lineColor': '#a14e9a',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
+
 flowchart LR
     A[Students' ranked\npreference lists] --> C[Matching process runs]
     B[Seats' eligibility\nand merit order] --> C
     C --> D{Better match\npossible for anyone?}
     D -->|Yes| C
     D -->|No| E[Stable match reached,\nresult goes to the authority]
-
-    style A fill:#003d5c,stroke:#31497e,color:#fff
-    style B fill:#003d5c,stroke:#31497e,color:#fff
-    style C fill:#d44c8d,stroke:#a14e9a,color:#fff
-    style D fill:#f9596f,stroke:#d44c8d,color:#fff
-    style E fill:#ff7a47,stroke:#ffa600,color:#fff
 ```
 
 Category and reservation rules aren't applied afterward, they're built into each seat's eligibility from the start, so a reserved seat simply never appears as an option for a student outside that category. This same approach can process well over a million applications in under an hour. What comes out is a proposed result, not a published one, it goes to the authority for review, and nothing reaches a student until the authority signs off, covered in full on How a Counselling Authority Actually Runs a Round.

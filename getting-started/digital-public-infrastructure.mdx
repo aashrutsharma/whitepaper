@@ -79,17 +79,6 @@ None of the systems above run counselling or match students to seats. Not one of
 Superadmission's proposed position is to sit as a coordination layer above these rails, so that every counselling body doesn't have to independently build its own connection to APAAR, its own connection to DigiLocker, its own DPDP-compliant data handling, and its own connection to ABC.
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#6366f1',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#4f46e5',
-    'lineColor': '#8b5cf6',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
 flowchart TD
     subgraph L1["Counselling Bodies"]
         A1["JoSAA"]
@@ -115,8 +104,6 @@ flowchart TD
     L2 --> B2
     L2 --> B3
     L2 --> B4
-
-    style L2 fill:#7c3aed,stroke:#6d28d9,color:#fff
 ```
 
 Superadmission manages this entire process for the student, feeding their data to multiple counseling bodies at the same time. Instead of making students re-upload documents or create new accounts, Superadmission uses APAAR as the core student ID and pulls verified records straight from DigiLocker. It follows NDEAR standards so any counseling body can connect instantly, protects everything under strict DPDP consent rules.

@@ -53,17 +53,6 @@ Registration is not a separate account, It is one combined process and it works 
 This is where Unnati tells the system what she actually wants. She is shown every college and course combination, and her job is to arrange as many of them as she wants, in order, from most preferred to least preferred. Each individual combination on this list is called a choice.
 
 ```mermaid actions={true}
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#31497e',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#003d5c',
-    'lineColor': '#674f95',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
 flowchart LR
     A([Open choice filling portal]) --> B[Browse eligible<br/>college-course combinations]
     B --> C[Add preferred ones to the list]
@@ -71,13 +60,6 @@ flowchart LR
     D --> E{Satisfied?}
     E -- No --> C
     E -- Yes --> F[Lock the list before deadline]
-
-    style A fill:#003d5c,stroke:#31497e,color:#ffffff,stroke-width:2px
-    style B fill:#31497e,stroke:#003d5c,color:#ffffff,stroke-width:2px
-    style C fill:#674f95,stroke:#a14e9a,color:#ffffff,stroke-width:2px
-    style D fill:#a14e9a,stroke:#674f95,color:#ffffff,stroke-width:2px
-    style E fill:#d44c8d,stroke:#f9596f,color:#ffffff,stroke-width:2px
-    style F fill:#ffa600,stroke:#ff7a47,color:#000000,stroke-width:3px
 ```
 
 A few things about this list that are easy to get wrong:
@@ -115,31 +97,12 @@ Every round has a deadline for choice filling. Before that deadline, she can rea
 Once every student locks their preferences, the counselling body runs its <Tooltip tip="The automated algorithm that scans your choices one by one from top to bottom, checking if your rank meets the cutoff for that specific seat before moving to the next candidate.">matching process</Tooltip> against all choices and seats to allot seats/admissions for the first <Tooltip tip="A round is a single stage of seat allocation where the computer runs its matching system once, publishes the results, and gives students a few days to secure their seat, this process typically repeats across 3 to 5 times/rounds to fill up all seats.">round</Tooltip> of counselling.
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#31497e',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#003d5c',
-    'lineColor': '#674f95',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
 flowchart LR
     A[Locked choice lists] --> ALG{Matching Process}
     B[Available seats] --> ALG
     C[Category quotas] --> ALG
     D[Rank cutoffs] --> ALG
     ALG --> E([Allotment result:<br/>college + course, per student])
-
-    style A fill:#003d5c,stroke:#31497e,color:#ffffff,stroke-width:2px
-    style B fill:#003d5c,stroke:#31497e,color:#ffffff,stroke-width:2px
-    style C fill:#31497e,stroke:#003d5c,color:#ffffff,stroke-width:2px
-    style D fill:#31497e,stroke:#003d5c,color:#ffffff,stroke-width:2px
-    
-    style ALG fill:#674f95,stroke:#a14e9a,color:#ffffff,stroke-width:2px
-    style E fill:#ffa600,stroke:#ff7a47,color:#000000,stroke-width:3px
 ```
 
 ## Step 5: Responding to the Allotment
@@ -220,17 +183,7 @@ Counselling never finishes in one round because students continuously change the
 </Accordion>
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#31497e',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#003d5c',
-    'lineColor': '#674f95',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
+
 flowchart LR
     R1([Round 1<br/>Allotment]) --> D1{Decision}
     D1 -- Freeze --> CONFIRM([Seat Confirmed])
@@ -243,15 +196,7 @@ flowchart LR
 
     R3 --> CONFIRM
 
-    style R1 fill:#003d5c,stroke:#31497e,color:#ffffff,stroke-width:2px
-    style R2 fill:#31497e,stroke:#003d5c,color:#ffffff,stroke-width:2px
-    style R3 fill:#674f95,stroke:#a14e9a,color:#ffffff,stroke-width:2px
-    
-    style D1 fill:#a14e9a,stroke:#674f95,color:#ffffff,stroke-width:2px
-    style D2 fill:#d44c8d,stroke:#f9596f,color:#ffffff,stroke-width:2px
-    
-    style CONFIRM fill:#ffa600,stroke:#ff7a47,color:#000000,stroke-width:3px
-    style EXIT fill:#f9596f,stroke:#d44c8d,color:#ffffff,stroke-width:2px
+   
 ```
 
 Most counselling bodies run somewhere between two and six such rounds. Every round repeats the exact same sequence.
@@ -268,17 +213,7 @@ Because cutoffs are usually much lower during this stage, the spot round is ofte
 ## The Full Cycle
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#31497e',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#003d5c',
-    'lineColor': '#674f95',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
+
 flowchart TD
     A["Counselling Registration + Application"] --> B["Choice Filling"]
     B --> C["Choice Locking<br/>at deadline"]
@@ -290,20 +225,6 @@ flowchart TD
     G --> D
     F --> I["Reporting +<br/>Fee Payment +<br/>Biometrics"]
     I --> J["Admission Confirmed"]
-
-    style A fill:#003d5c,stroke:#31497e,color:#ffffff,stroke-width:2px
-    style B fill:#003d5c,stroke:#31497e,color:#ffffff,stroke-width:2px
-    style C fill:#31497e,stroke:#003d5c,color:#ffffff,stroke-width:2px
-    
-    style D fill:#31497e,stroke:#003d5c,color:#ffffff,stroke-width:2px
-    style E fill:#674f95,stroke:#a14e9a,color:#ffffff,stroke-width:2px
-    
-    style F fill:#a14e9a,stroke:#674f95,color:#ffffff,stroke-width:2px
-    style G fill:#d44c8d,stroke:#f9596f,color:#ffffff,stroke-width:2px
-    style H fill:#f9596f,stroke:#d44c8d,color:#ffffff,stroke-width:2px
-    
-    style I fill:#ff7a47,stroke:#ffa600,color:#ffffff,stroke-width:2px
-    style J fill:#ffa600,stroke:#ff7a47,color:#000000,stroke-width:3px
 ```
 
 This is the loop Unnati now goes through, once for JoSAA. A student targeting a medical seat runs through this same loop again on MCC's website. A student wanting a home-state engineering seat runs it a third time on their own state's portal.<br /><br />Which specific bodies run counselling, and what each one actually owns, is covered in full on Counselling Bodies.

@@ -17,15 +17,7 @@ Go back through everything and one thing is true across all of it: no system cur
 JoSAA doesn't know that her state counselling board already has her category certificate. Her state board doesn't know JoSAA already verified her marksheet. Each system was built to run on its own, so each one asks her for everything, from scratch, every time.
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'background': 'transparent',
-    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, sans-serif',
-    'lineColor': '#31497e',
-    'edgeLabelBackground': '#ffffff'
-  }
-}}%%
+
 flowchart TD
     U(["👤 Unnati"])
     
@@ -36,16 +28,6 @@ flowchart TD
     J -.-|No Data Sharing| S
     S -.-|No Data Sharing| I
     I -.-|No Data Sharing| J
-
-    %% Node Styling
-    style U fill:#003d5c,stroke:#003d5c,color:#ffffff,stroke-width:2px
-    style J fill:#31497e,stroke:#31497e,color:#ffffff,stroke-width:1px
-    style S fill:#674f95,stroke:#674f95,color:#ffffff,stroke-width:1px
-    style I fill:#a14e9a,stroke:#a14e9a,color:#ffffff,stroke-width:1px
-
-    %% Link Styling
-    linkStyle 0,1,2 stroke:#31497e,stroke-width:2px
-    linkStyle 3,4,5 stroke:#f9596f,stroke-width:2px,stroke-dasharray: 5 5
 ```
 
 Notice what's missing from that diagram. There's no line between JoSAA and the state CET. There never was. The only thing connecting all three systems right now is Unnati herself, carrying information from one to the other by hand.
@@ -97,28 +79,11 @@ This is the part that causes the most actual damage. JoSAA's acceptance window a
 With Superadmission, both deadlines sit on one screen. If two windows are about to overlap, she's told in advance, not left to notice it herself. If she accepts a seat in one system, the platform tells her exactly what that means for the seat she's currently holding in the other.
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'background': 'transparent',
-    'fontFamily': 'ui-sans-serif, system-ui, -apple-system, sans-serif',
-    'lineColor': '#31497e',
-    'edgeLabelBackground': '#ffffff'
-  }
-}}%%
+
 flowchart LR
     A["JoSAA Deadline<br>Day 5, 11:59 PM"] --> C{" One Dashboard"}
     B[" State CET Deadline<br>Day 7, 5:00 PM"] --> C
     C --> D["Centralized View<br>Sorted by urgency with warning if they overlap"]
-
-    %% Node Styling
-    style A fill:#003d5c,stroke:#003d5c,color:#ffffff,stroke-width:1px
-    style B fill:#31497e,stroke:#31497e,color:#ffffff,stroke-width:1px
-    style C fill:#674f95,stroke:#674f95,color:#ffffff,stroke-width:2px
-    style D fill:#ffa600,stroke:#ffa600,color:#000000,stroke-width:1px
-
-    %% Link Styling
-    linkStyle 0,1,2 stroke:#31497e,stroke-width:2px
 ```
 
 ## PraveshAI: The Part That Actually Advises Her
@@ -165,23 +130,6 @@ flowchart LR
     T4 -. saves duplicate tracking .-> P4
     T5 -. saves manual comparison .-> P5
     T6 -. removes the risk .-> P6
-
-    classDef stage1 fill:#003d5c,stroke:#003d5c,color:#fff
-    classDef stage2 fill:#31497e,stroke:#31497e,color:#fff
-    classDef stage3 fill:#674f95,stroke:#674f95,color:#fff
-    classDef stage4 fill:#a14e9a,stroke:#a14e9a,color:#fff
-    classDef stage5 fill:#d44c8d,stroke:#d44c8d,color:#fff
-    classDef stage6 fill:#f9596f,stroke:#f9596f,color:#fff
-
-    class T1,P1 stage1
-    class T2,P2 stage2
-    class T3,P3 stage3
-    class T4,P4 stage4
-    class T5,P5 stage5
-    class T6,P6 stage6
-
-    style today fill:#0a1929,stroke:#ff7a47,stroke-width:2px,color:#fff
-    style proposed fill:#1a1029,stroke:#ffa600,stroke-width:2px,color:#fff
 ```
 
 ---
