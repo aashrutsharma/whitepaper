@@ -1,13 +1,22 @@
 ---
 title: "Superadmission as Digital Public Infrastructure"
 description: "What are India's digital frameworks (like NEP, DPI, and the IndiaAI Mission) and how Superadmission integrates alongside them."
-icon: "bring-to-front"
+icon:
+  name: "bookmark-check"
+  style: "regular"
+  library: "lucide"
 mode: "wide"
 ---
 
 > When a student enters the admission process, creates profile or upload documents , no step happens in isolation. Behind it sits an entire policy and a set of national digital systems built over the last few years, some of which decide what counselling bodies are even allowed to ask for, and others which decide how student's data is allowed to move once they hand it over.
 
-## NEP 2020: The foundation for everything else
+<div style={{display: 'flex', alignItems: 'center', gap: '24px', margin: '32px 0'}}>
+  <img src="/images/nep.svg" alt="" style={{width: '96px', height: '96px', flexShrink: 0}} />
+
+  <div>
+    ### NEP 2020: The foundation for everything else
+  </div>
+</div>
 
 Before any of the digital systems described on this page existed, there was a policy decision. In 2020, the Indian government replaced its old education policy with a new one, the National Education Policy, or NEP 2020.
 
@@ -32,29 +41,59 @@ To make NEP's promise of portable credits and portable identity actually work, I
 
 ## The Four Building Blocks
 
-### APAAR: One ID for a Student's Entire Academic Life
+<div style={{display: 'flex', alignItems: 'center', gap: '24px', margin: '32px 0'}}>
+  <img src="/images/apaar.svg" alt="" style={{width: '96px', height: '96px', flexShrink: 0}} />
+
+  <div>
+    ### APAAR: One ID for a Student's Entire Academic Life
+  </div>
+</div>
 
 APAAR stands for Automated Permanent Academic Account Registry. Think of it as an ID number, similar in spirit to Aadhaar, but built specifically to follow a student's academic record.
 
 Right now, A student lets say Unnati has a JEE application number, a separate NEET number if she'd taken that exam too, a school registration number, and she'll get yet another student ID once she joins a college. APAAR is meant to replace this pile of disconnected numbers with one ID that stays with a student from school through every degree they ever pursue.
 
-### ABC: A Bank Account for Academic Credits
+<div style={{display: 'flex', alignItems: 'center', gap: '24px', margin: '32px 0'}}>
+  <img src="/images/ndear.svg" alt="" style={{width: '96px', height: '96px', flexShrink: 0}} />
+
+  <div>
+    ### ABC: A Bank Account for Academic Credits
+  </div>
+</div>
 
 ABC stands for Academic Bank of Credits. It works exactly like its name suggests, except what gets deposited isn't money, it's course credits. This is the direct technical answer to NEP's multiple entry and exit promise.
 
 If Unnati studies for a semester at one college and later needs to shift to a different one, or takes a certificate course alongside her degree, ABC is meant to store the credits she earned along the way in one place, tied to her APAAR ID. Credit earned at one institution doesn't just vanish the moment she's no longer enrolled there. She can carry it forward, and in principle even redeem it toward a future degree elsewhere.
 
-### NDEAR: The Core Rules
+<div style={{display: 'flex', alignItems: 'center', gap: '24px', margin: '32px 0'}}>
+  <img src="/images/ndear.svg" alt="" style={{width: '96px', height: '96px', flexShrink: 0}} />
+
+  <div>
+    ### NDEAR: The Core Rules
+  </div>
+</div>
 
 NDEAR stands for National Digital Education Architecture. It isn't a product a student ever directly touches. It's the underlying set of standards that APAAR, ABC, DigiLocker, and other education systems all agree to follow, so they can exchange information with each other without every single pair of systems needing a custom-built connection between them.
 
 > A useful way to think about it: NDEAR is the agreed shape of the pipes. APAAR, ABC, and DigiLocker are what flows through those pipes.
 
-### DigiLocker: Where Verified Documents Already Live
+<div style={{display: 'flex', alignItems: 'center', gap: '24px', margin: '32px 0'}}>
+  <img src="/images/digilocker.svg" alt="" style={{width: '96px', height: '96px', flexShrink: 0}} />
+
+  <div>
+    ### DigiLocker: Where Verified Documents Already Live
+  </div>
+</div>
 
 DigiLocker is a digital storage system where official documents, board marksheets, certificates, sometimes Aadhaar itself, are placed directly by the organisation that issued them, digitally signed, and available for the students to share whenever they're asked for.
 
-## DPDP: Digital Personal Data Protection Act, 2023
+<div style={{display: 'flex', alignItems: 'center', gap: '24px', margin: '32px 0'}}>
+  <img src="/images/dpdp.svg" alt="" style={{width: '96px', height: '96px', flexShrink: 0}} />
+
+  <div>
+    ### DPDP: Digital Personal Data Protection Act, 2023
+  </div>
+</div>
 
 DPDP sets out a few plain obligations for anyone handling personal data, including Unnati's rank, category, documents, and contact details as they move through counselling:
 
@@ -64,7 +103,13 @@ DPDP sets out a few plain obligations for anyone handling personal data, includi
 
 Any system proposing to move a student's data between counselling bodies, DigiLocker, and APAAR, the way Superadmission proposes to, has to be built around these obligations.
 
-## The IndiaAI Mission:
+<div style={{display: 'flex', alignItems: 'center', gap: '24px', margin: '32px 0'}}>
+  <img src="/images/indiaai.svg" alt="" style={{width: '96px', height: '96px', flexShrink: 0}} />
+
+  <div>
+    ### The IndiaAI Mission:
+  </div>
+</div>
 
 The IndiaAI Mission is the government's national program for building out India's AI capability, compute infrastructure, shared datasets, skilling, and a specific focus area called Safe and Trusted AI, which is about making sure AI systems used in important decisions are explainable and don't behave like an unaccountable <Tooltip tip="Add tooltip text">black box</Tooltip>.
 
