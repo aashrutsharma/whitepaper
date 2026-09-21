@@ -23,17 +23,7 @@ A round closes either on schedule or early, if the authority decides it's served
 This is the most disruptive action available, and it's treated that way on purpose. If a result was published in error, reversing it means undoing something students may have already acted on, accepted a seat, started arranging travel, told their family. Because of that, a rollback isn't a single click.
 
 ```mermaid
-%%{init: {
-  'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#6366f1',
-    'primaryTextColor': '#ffffff',
-    'primaryBorderColor': '#4f46e5',
-    'lineColor': '#8b5cf6',
-    'background': 'transparent',
-    'fontFamily': 'Inter, sans-serif'
-  }
-}}%%
+
 flowchart TD
     A[Error identified\nin a published result] --> B[Rollback requested\nwith a documented reason]
     B --> C[Requires authorisation\nfrom more than one person]
