@@ -374,13 +374,5 @@
       "category": "Education Technology",
       "classification": "Higher Education Admissions Infrastructure"
     }
-  },
-  "banner": {
-    "content": "2026 State of Admissions Report (Read the Research)",
-    "color": {
-      "light": "#A6A6A6",
-      "dark": "#696969"
-    },
-    "type": "critical"
   }
 }
