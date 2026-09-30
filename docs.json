@@ -78,7 +78,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/getting-started/overview"
+      "destination": "/getting-started/where-to-start"
     },
     {
       "source": "/intelligence-and-data/what-is-praveshai",
