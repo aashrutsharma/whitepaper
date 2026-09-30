@@ -6,18 +6,19 @@ mode: "wide"
 
 The previous page covered where a person has to sign off before something becomes final. This page is about the other half of trust: making sure that whatever happened, human decision or automated one, can be reconstructed and explained afterward.
 
-## What Gets Recorded
+## What gets recorded
 
-Every meaningful action leaves a record such as a document getting scored and cleared, a preference list getting locked, an authority authorising a result. Each entry captures what happened, who did it or what triggered it, and when.
+Every meaningful action leaves a record such as  a document gets scored and cleared, a preference list gets locked or an authority authorises a result. Each entry says what happened, who did it or <Tooltip tip="Suppose a payment countdown i initiated because a student accepted a seat in spot round counselling so here the acceptance triggered the coutdown">what triggered it</Tooltip>, and when it took place.
 
-For an automated decision specifically, like a document's confidence score or a proposed seat match, what's stored isn't just the final outcome. The actual inputs that led to it, which past-year cutoffs were used, which score a document received and why, are kept alongside it. That's what makes it possible to answer "why did this happen" properly months later, instead of only being able to say "this is what happened," with no way to explain the reasoning behind it.
+Automated decisions get more than that. Take a document's confidence score or a proposed seat match. The system does not store only the final outcome. It also keeps the inputs that led to it, such as which past-year cutoffs were used and what score a document received and why.
+
+This is what makes it possible to answer "why did this happen?" months later. Without those inputs, all anyone could say is what happened, with no way to explain the reasoning behind it.
 
 ```mermaid
-
 flowchart LR
     A[Action happens] --> B[Outcome recorded]
-    A --> C[Reasoning and inputs\nrecorded alongside it]
-    B --> D[Permanent record,\n uneditable]
+    A --> C[Reasoning and inputs<br/>recorded alongside it]
+    B --> D[Permanent record,<br/>cannot be edited]
     C --> D
 ```
 
@@ -40,9 +41,3 @@ If something needs correcting later, a new record is added explaining the correc
     Can access the full log if something genuinely needs investigating, the same grievance and data-protection officer role required under DPDP.
   </Card>
 </CardGroup>
-
-## How Long This Is Kept
-
-Allotment records and audit logs are retained for 7 years, long enough to cover institutional record-keeping needs and any regulatory review that might come up well after a cycle has closed.
-
----
