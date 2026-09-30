@@ -164,17 +164,17 @@
               "light": "#3e6af1",
               "dark": "#3e6af1"
             },
-            "groups": [
+            "pages": [
+              "untitled-page",
               {
                 "group": "State of Admissions",
+                "icon": "book-open",
                 "pages": [
-                  "getting-started/overview",
                   "getting-started/how-admissions-actually-work",
                   "getting-started/counselling",
                   "getting-started/digital-public-infrastructure",
                   "getting-started/where-this-actually-came-from"
-                ],
-                "icon": "book-open"
+                ]
               }
             ]
           },
@@ -197,7 +197,12 @@
               "dark": "#72b91e"
             },
             "href": "https://superadmission.com/pravesh"
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Overview",
+        "anchors": [
           {
             "anchor": "Blueprint",
             "icon": "map",
@@ -208,33 +213,52 @@
             "groups": [
               {
                 "group": "What Changes",
+                "icon": "chart-no-axes-combined",
                 "pages": [
                   "the-problem/what-superadmission-actually-changes",
                   "the-problem/what-this-looks-like-for-the-people-running-it",
                   "the-problem/a-day-with-superadmission"
-                ],
-                "icon": "chart-no-axes-combined"
+                ]
               },
               {
                 "group": "Policy and Compliance",
+                "icon": "badge-alert",
                 "pages": [
                   "the-problem/how-superadmission-protects-student-data",
                   "the-problem/what-this-depends-on"
-                ],
-                "icon": "badge-alert"
+                ]
               }
             ]
           },
           {
-            "anchor": "Digital Spot Round Environment",
-            "icon": "battle-net",
-            "iconType": "brands",
+            "anchor": "PraveshAI™",
+            "icon": "brain",
             "color": {
-              "light": "#9834df",
-              "dark": "#9834df"
+              "light": "#575757",
+              "dark": "#575757"
             },
-            "pages": [
-              "praveshai/digital-spot-round"
+            "groups": [
+              {
+                "group": "Overview",
+                "icon": "square-dashed",
+                "pages": [
+                  "technical/what-is-praveshai"
+                ]
+              },
+              {
+                "group": "Core Capabilities",
+                "icon": "list-check",
+                "pages": [
+                  "technical/core-capabilities"
+                ]
+              },
+              {
+                "group": "Trust",
+                "pages": [
+                  "technical/the-human-checkpoints-built-into-this",
+                  "technical/how-every-decision-can-be-traced-back"
+                ]
+              }
             ]
           },
           {
@@ -249,34 +273,14 @@
             ]
           },
           {
-            "anchor": "PraveshAI™",
-            "icon": "brain",
+            "anchor": "Digital Spot Round Environment",
+            "icon": "battle-net",
             "color": {
-              "light": "#575757",
-              "dark": "#575757"
+              "light": "#9834df",
+              "dark": "#9834df"
             },
-            "groups": [
-              {
-                "group": "Overview",
-                "pages": [
-                  "technical/what-is-praveshai"
-                ],
-                "icon": "square-dashed"
-              },
-              {
-                "group": "Core Capabilities",
-                "pages": [
-                  "technical/core-capabilities"
-                ],
-                "icon": "list-check"
-              },
-              {
-                "group": "Trust",
-                "pages": [
-                  "technical/the-human-checkpoints-built-into-this",
-                  "technical/how-every-decision-can-be-traced-back"
-                ]
-              }
+            "pages": [
+              "praveshai/digital-spot-round"
             ]
           }
         ]
