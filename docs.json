@@ -216,17 +216,17 @@
                 "group": "What Changes",
                 "icon": "chart-no-axes-combined",
                 "pages": [
-                  "the-problem/what-superadmission-actually-changes",
-                  "the-problem/what-this-looks-like-for-the-people-running-it",
-                  "the-problem/a-day-with-superadmission"
+                  "overview/blueprint/what-superadmission-actually-changes",
+                  "overview/blueprint/what-this-looks-like-for-the-people-running-it",
+                  "overview/blueprint/entire-admission-journey-with-superadmission"
                 ]
               },
               {
                 "group": "Policy and Compliance",
                 "icon": "badge-alert",
                 "pages": [
-                  "the-problem/how-superadmission-protects-student-data",
-                  "the-problem/what-this-depends-on"
+                  "overview/blueprint/how-superadmission-protects-student-data",
+                  "overview/blueprint/what-superadmission-depends-on"
                 ]
               }
             ]
@@ -238,26 +238,14 @@
               "light": "#575757",
               "dark": "#575757"
             },
-            "groups": [
-              {
-                "group": "Overview",
-                "icon": "square-dashed",
-                "pages": [
-                  "technical/what-is-praveshai"
-                ]
-              },
-              {
-                "group": "Core Capabilities",
-                "icon": "list-check",
-                "pages": [
-                  "technical/core-capabilities"
-                ]
-              },
+            "pages": [
+              "overview/pravesh-ai/what-is-praveshai",
+              "overview/pravesh-ai/core-functions",
               {
                 "group": "Trust",
                 "pages": [
-                  "technical/the-human-checkpoints-built-into-this",
-                  "technical/how-every-decision-can-be-traced-back"
+                  "overview/pravesh-ai/the-built-in-human-reviews",
+                  "overview/pravesh-ai/how-every-decision-can-be-traced-back"
                 ]
               }
             ]
@@ -270,7 +258,7 @@
               "dark": "#79251b"
             },
             "pages": [
-              "technical/what-is-manifest"
+              "overview/manifest/what-is-manifest"
             ]
           },
           {
@@ -281,7 +269,7 @@
               "dark": "#9834df"
             },
             "pages": [
-              "praveshai/digital-spot-round"
+              "overview/digital-spot-round"
             ]
           }
         ]
