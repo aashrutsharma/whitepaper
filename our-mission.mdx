@@ -4,7 +4,9 @@ description: "The problem we see in college admissions in India, and the future 
 icon: "eye"
 ---
 
-Every year, crores of students in India try to get into college. Getting a good score in competetive exam is hard but atleast getting the seat that the score deserves should be easy. 
+A student spends years preparing for one exam. They clear it. Their rank is good enough for the seat they worked for. And then, in the weeks that follow, a real number of them lose that seat anyway, not because they weren't good enough, but because a website logged them out, a payment didn't register, or a notice went up on a portal nobody told them to check. 
+
+We built Superadmission because this isn't a rare story. It's a normal one, repeated at a scale that's hard to picture until you see the numbers behind it.
 
 ## India's admissions in numbers
 
@@ -34,71 +36,55 @@ Nobody teaches students how to do this. Families learn it by trying, and many ma
 
 In short: **students with merit lose seats because the admission system is hard to use.**
 
-## Things that go wrong
-
 <AccordionGroup>
-  <Accordion title="2. There is no single path" icon="route">
-    A student may take one to three exams and then face multiple counselling portals. An engineering student, for example, may use JoSAA, state portals and university portals all at once.
-
-    Students with average ranks have the hardest time. They apply in many places to keep their chances open. That means many logins, many dates and many fees, all in separate tabs.
+  <Accordion title="A student is rarely on just one portal" icon="route">
+    An engineering aspirant with a decent rank might be using JoSAA, a state counselling portal, and a university's own system, all in the same week. Students with middle-of-the-pack ranks have it worst, since keeping every option open means juggling every one of these at once, each with its own login, its own dates, and its own fee.
   </Accordion>
 
-  <Accordion title="5. Good guidance is not accessible to all" icon="compass">
-    There is no single trusted place to learn about colleges, fees, dates and documents. Most students depend on YouTube videos and advice from people they know.
-
-    First-generation students have the hardest time, because nobody at home has been through counselling before. Many choose a college nearby with lower quality even when their score is high. Some families pay private agents for basic clarity. Good guidance should be free for every student.
+  <Accordion title="The same information gets typed in again and again" icon="copy">
+    Every new portal means a new account, and a new account means retyping the same name, the same family details, the same scorecard. Applying to five institutions can mean filling out the same information five separate times, and re-uploading the same documents five times, each site with its own rules for file size and format.
   </Accordion>
 
-  <Accordion title="4. The same details are filled repeatedly" icon="copy">
-    Each portal asks for a new account. Each one asks for the same name, family details, scorecards and more. Applying to five colleges means filling five forms with the same information.
-
-    Documents must be uploaded again on every site, and every site has its own rules for file type and size. Families spend days changing files and uploading the same papers.
+  <Accordion title="Updates that matter are easy to miss entirely" icon="alarm-clock-check">
+    A student juggling two to six portals during admission season has no single place telling them what changed. A revised cutoff, a document flagged as invalid, a payment deadline, each one gets posted on a separate site's own notice board. In a spot round, where empty seats get filled fast, a student can have less than 24 hours to see a notice and act on it. Good seats get missed this way, not because a student wasn't eligible, but because they never saw the notice in time.
   </Accordion>
 
-  <Accordion title="3. Important updates are easy to miss" icon="alarm-clock-check">
-    Students use 2 to 6 portals at the same time in admission season. Cut-off marks, document errors and payment deadlines are posted on the notice boards of separate websites. There is no single place that tells the student what changed.
-
-    In spot rounds, colleges fill empty seats very fast. Sometimes a student gets less than 24 hours to see the notice and reach the campus. Many students miss good seats only because they did not see a notice in time.
+  <Accordion title="Technical failures cost real seats" icon="book-open-text">
+    Portals often log a student out after a few idle minutes, and a short break to talk to a parent can wipe out every choice they'd filled in. Payments fail in ways that are worse than an error message, money leaves the account but the portal still shows the fee as unpaid, and the seat gets released with no one checking what actually happened. Even a document upload can go wrong for a reason that has nothing to do with the document itself, a phone photo too large for the site's limit, shrunk until it's blurry enough to get rejected.
   </Accordion>
 
-  <Accordion title="1. Students lose seats because of technical problems" icon="book-open-text">
-    Many portals log students out after a few minutes. If a student takes a short break to talk to their parents, all the choices they filled can disappear.
-
-    Payments also fail. Sometimes the money leaves the bank account, but the college website still shows the fee as unpaid. The system then cancels the seat, and no person checks it.
-
-    Document uploads cause trouble too. Photos from a phone are too big, so students shrink them. The shrunk files look blurry, and the website rejects them.
+  <Accordion title="The sites fail exactly when the most students need them" icon="server">
+    When a result or a seat list goes live, lakhs of students try to open the same page within minutes of each other, and the page freezes or stops loading entirely. This tends to happen in the final hours of a round, exactly when a student is trying to confirm a choice or pay a fee before a deadline that doesn't care whether the page loaded. A food delivery app handles millions of simultaneous users without falling over. A national admissions system should be able to do the same.
   </Accordion>
 
-  <Accordion title="6. Websites stop working when most students need them" icon="server">
-    When results or seat lists come out, lakhs of students open the same link at the same time. The pages freeze, show errors or do not load.
-
-    This is most painful in the last hours of a round. A student may need to pay a fee or confirm a choice before the deadline, but the page keeps loading. A food delivery app can handle millions of people at once. A national admission website should be able to do the same.
+  <Accordion title="Good guidance isn't available to everyone" icon="compass">
+    There's no single trusted place for a student to learn what a college actually costs, what its deadlines are, or what documents it needs. Most students end up relying on YouTube videos and whatever advice happens to reach them. This hits first-generation applicants hardest, since nobody at home has been through the process before, and it's common for a strong scorer to settle for a weaker college nearby simply because it's the one they understand. Some families end up paying a private agent just for basic clarity that should never have cost anything.
   </Accordion>
 </AccordionGroup>
 
-## What Is Our Mission?
+## What We Believe
 
 > **A student should not need to become an expert in India's admission system to get the seat they deserve.**
 
 We want college admission in India to be simple, fair and clear for everyone involved. A student with merit should get a seat. A student from a small town should have the same information as a student from a big city. A family should never lose a seat because of a slow website or a missed deadline.
 
-## What the future looks like
+## What We're Actually Building
 
 <Columns cols={2}>
   <Card title="For students" icon="graduation-cap">
-    One place to see every exam, every counselling round and every deadline. Clear next steps at every stage. Good guidance for free.
+    One place to see every exam, every counselling round, and every deadline that applies to them, with clear next steps at each stage, and real guidance available for free.
   </Card>
 
   <Card title="For counselling bodies" icon="landmark">
-    Fewer errors in forms and documents. Less manual load. Better information for students before they apply.<br />
+    Fewer errors in the forms and documents they have to process, less manual work overall, and students who arrive already informed instead of starting from zero.
   </Card>
 
-  <Card title="For institutes" icon="school">
-    Alocation mechanism and Smart alerts that make sure seats get occupied by right students on the right time.. Fewer vacant seats after the counselling end.
+  <Card title="For institutions" icon="school">
+    An allocation process and timely alerts that get the right seats filled by the right students on time, and fewer seats sitting empty once counselling ends.
   </Card>
 
   <Card title="For the government" icon="flag">
-    An admission system that works well at a large scale. Every student counts, and every step can be seen and checked.
+    An admissions system that actually holds up at national scale, where every student counts and every step in the process can be seen and checked.
   </Card>
 </Columns>
 
